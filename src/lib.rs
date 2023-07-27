@@ -1,3 +1,5 @@
+#![feature(let_else)]
+#![feature(label_break_value)]
 #![cfg_attr(has_no_coverage, feature(no_coverage))]
 
 extern crate core;

@@ -1,6 +1,6 @@
 [build-system]
 requires = [
-    'maturin>=1,<2',
+    'maturin[zig]>=1,<2',
     'typing-extensions >=4.6.0,!=4.7.0'
 ]
 build-backend = 'maturin'
@@ -52,6 +52,7 @@ python-source = "python"
 module-name = "pydantic_core._pydantic_core"
 bindings = 'pyo3'
 features = ["pyo3/extension-module"]
+compatibility = "manylinux1"
 
 [tool.ruff]
 line-length = 120

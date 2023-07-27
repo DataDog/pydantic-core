@@ -13,3 +13,8 @@ rustflags = [
   "-C", "link-arg=-undefined",
   "-C", "link-arg=dynamic_lookup",
 ]
+
+[patch.crates-io]
+speedate = { git = "https://github.com/DataDog/speedate.git", branch = "support-old-nightly" }
+pyo3 = { git = "https://github.com/DataDog/pyo3.git", branch = "support-old-nightly" }
+indexmap = { git = "https://github.com/DataDog/indexmap.git", branch = "support-old-nightly" }
